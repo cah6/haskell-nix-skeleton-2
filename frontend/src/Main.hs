@@ -2,7 +2,8 @@
 
 module Main where
 
-import Reflex.Dom
+import Reflex.Dom.Core
+import Language.Javascript.JSaddle.Warp
 
 main :: IO ()
-main = mainWidget $ text "Hello!"
+main = run 3003 $ mainWidget $ text "Hello!"

@@ -1,7 +1,9 @@
-{ reflex-platform ? import ./reflex-platform {} }:
-
+{ reflex-platform ? import ./reflex-platform {}
+, withHoogle ? false
+}:
 reflex-platform.project ({ pkgs, ... }: {
-  withHoogle = false;
+  
+  inherit withHoogle;
   useWarp = true;
 
   packages = {
@@ -14,13 +16,10 @@ reflex-platform.project ({ pkgs, ... }: {
     ghcjs = ["common" "frontend"];
   };
 
-  shellToolOverrides = ghc: super: {
-    cabal-install = pkgs.haskellPackages.cabal-install;
-    hlint = pkgs.haskellPackages.hlint;
+  shellToolOverrides = self: super: {
   };
 
   overrides = self: super: {
-    # http-media = pkgs.haskell.lib.dontCheck super.http-media;
-    jsaddle-wkwebview = pkgs.haskell.lib.dontCheck super.jsaddle-wkwebview;
   };
+
 })
