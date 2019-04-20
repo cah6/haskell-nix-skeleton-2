@@ -1,4 +1,4 @@
-{ reflex-platform ? import ./reflex-platform.nix {}
+{ reflex-platform ? import ./nix/reflex-platform.nix {}
 , withHoogle ? false
 }:
 reflex-platform.project ({ pkgs, ... }: {
