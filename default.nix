@@ -1,8 +1,8 @@
-{ reflex-platform ? import ./reflex-platform {}
+{ reflex-platform ? import ./reflex-platform.nix {}
 , withHoogle ? false
 }:
 reflex-platform.project ({ pkgs, ... }: {
-  
+
   inherit withHoogle;
   useWarp = true;
 
