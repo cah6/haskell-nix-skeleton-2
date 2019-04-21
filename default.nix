@@ -21,7 +21,7 @@ reflex-platform.project ({ pkgs, ... }: {
 
   overrides = self: super: {
     http-media = pkgs.haskell.lib.dontCheck super.http-media;
-    servant-reflex = pkgs.haskellPackages.callPackage ./nix/servant-reflex.nix { };
+    servant-reflex = self.callPackage ./nix/servant-reflex.nix { };
     lens-aeson = pkgs.haskell.lib.dontCheck super.lens-aeson;
   };
 
