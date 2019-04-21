@@ -1,4 +1,4 @@
 Multi-package Reflex example
 ---
 
-Code for forthcoming blog post.
+Code for https://cah6.github.io/technology/nix-haskell-3/.
