@@ -1,9 +1,9 @@
+
 {-# LANGUAGE OverloadedStrings #-}
 
 module Main where
 
-import Reflex.Dom.Core
-import Language.Javascript.JSaddle.Warp
+import Reflex.Dom
 
 main :: IO ()
-main = run 3003 $ mainWidget $ text "Hello!"
+main = mainWidget $ text "Hello!"
