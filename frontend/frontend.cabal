@@ -23,7 +23,6 @@ executable frontend
                      , http-media
                      , lens
                      , lens-aeson
-                     , jsaddle-warp
                      , servant-reflex
                      , reflex-dom
   hs-source-dirs:      src

@@ -3,8 +3,8 @@ let
   reflex-platform = bootstrap.fetchFromGitHub {
     owner = "reflex-frp";
     repo  = "reflex-platform";
-    rev = "7e002c573a3d7d3224eb2154ae55fc898e67d211";
-    sha256 = "1adhzvw32zahybwd6hn1fmqm0ky2x252mshscgq2g1qlks915436";
+    rev = "a15d3a2411e7ca7d4ee4853b57c72fe83faee272";
+    sha256 = "1dsvw0lah7761vndip1hqal4fjpjv84ravinnfhy83jgfav5ivna";
   };
 in 
   import reflex-platform {}
